@@ -17,22 +17,269 @@
       <div class="header-inner">
         <a href="index.html" class="logo-container">
           <img
-            src="img/logo_tecnoshop.png"
-            alt="TecnoShop Logo"
-            class="main-logo"
-          />
+            src="img/logo.png"
+            alt="Portfolio Logo"
+            class="main-logo"/>
         </a>
 
         <nav class="main-nav" aria-label="Navegación Principal">
           <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#tarjetas">Proyectos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#peliculas">Películas</a></li>
-            <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            <li><a href="#about_me">Sobre mí</a></li>
+            <li><a href="#skills">Mis Skills</a></li>
+            <li><a href="#contact" class="btn-nav">Contacto</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <main>
+    <section id="sobre-mi" class="seccion hero">
+      <div class="container sobre-mi-grid">
+
+        <div class="sobre-mi-texto">
+          <p class="etiqueta">👋 Hola, soy</p>
+          <h1>Martin Juan</h1>
+          <p class="descripcion">
+            Soy estudiante de la Tecnicatura den Desarrollo de Software con ganas de construir cosas que
+            funcionen bien y se vean mejor.
+          </p>
+          <a href="#contacto" class="btn-primario">Hablemos</a>
+        </div>
+
+        <div class="sobre-mi-imagen">
+          <img
+            src="https://picsum.photos/seed/portfolio/420/420"
+            alt="Foto de perfil"
+            class="avatar"
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <section id="tarjetas" class="seccion seccion-oscura">
+      <div class="container">
+        <h2 class="titulo-seccion">¿Qué me mueve?</h2>
+        <p class="subtitulo-seccion">Las áreas que más me apasionan y a las que dedico mi energía.</p>
+
+        <div class="tarjetas-grid">
+
+          <article class="tarjeta">
+            <img
+              src="https://picsum.photos/seed/frontend99/600/360"
+              alt="Representación visual de desarrollo frontend: código en pantalla"
+              class="tarjeta-img"
+            />
+            <div class="tarjeta-contenido">
+              <span class="tarjeta-tag">Desarrollo</span>
+              <h3>Frontend</h3>
+              <p>
+                Me gusta transformar diseños en interfaces reales. Cada
+                pixel, cada transición y cada interacción importan.
+              </p>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img
+              src="https://picsum.photos/seed/uidesign77/600/360"
+              alt="Representación visual de diseño UI/UX: bocetos y wireframes"
+              class="tarjeta-img"
+            />
+            <div class="tarjeta-contenido">
+              <span class="tarjeta-tag">Diseño</span>
+              <h3>UI / UX</h3>
+              <p>
+                El diseño existe para resolver problemas. Me fascina pensar
+                en cómo las personas interactúan con las pantallas.
+              </p>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img
+              src="https://picsum.photos/seed/opensource55/600/360"
+              alt="Representación visual de open source: colaboración y código compartido"
+              class="tarjeta-img"
+            />
+            <div class="tarjeta-contenido">
+              <span class="tarjeta-tag">Comunidad</span>
+              <h3>Open Source</h3>
+              <p>
+                Aprender en comunidad y contribuir a proyectos abiertos es
+                una de las partes que más disfruto del mundo tech.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="seccion">
+      <div class="container">
+        <h2 class="titulo-seccion">Mis skills</h2>
+        <p class="subtitulo-seccion">Lo que sé, lo que estoy aprendiendo y lo que hago cuando no programo.</p>
+
+        <div class="habilidades-wrapper">
+
+          <div class="habilidades-bloque">
+            <h3>Tecnologías que manejo</h3>
+            <ul class="lista-habilidades">
+              <li>HTML5 semántico</li>
+              <li>CSS3 / Flexbox / Grid</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Git y GitHub</li>
+              <li>Diseño responsivo</li>
+            </ul>
+          </div>
+
+          <div class="habilidades-bloque">
+            <h3>Quiero aprender</h3>
+            <ul class="lista-habilidades lista-aprender">
+              <li>React.js</li>
+              <li>TypeScript</li>
+              <li>Node.js</li>
+              <li>SQL</li>
+              <li>Figma avanzado</li>
+            </ul>
+          </div>
+
+          <div class="habilidades-bloque">
+            <h3>Mis hobbies</h3>
+            <table class="tabla-hobbies">
+              <thead>
+                <tr>
+                  <th>Actividad</th>
+                  <th>Frecuencia</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fotografía</td>
+                  <td>Semanal</td>
+                </tr>
+                <tr>
+                  <td>Lectura sci-fi</td>
+                  <td>Diaria</td>
+                </tr>
+                <tr>
+                  <td>Ciclismo urbano</td>
+                  <td>Semanal</td>
+                </tr>
+                <tr>
+                  <td>Contribuir en open source</td>
+                  <td>Mensual</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="peliculas" class="seccion seccion-oscura">
+      <div class="container">
+        <h2 class="titulo-seccion">Mis películas favoritas</h2>
+        <p class="subtitulo-seccion">Tres films que me marcaron y que recomiendo sin dudarlo.</p>
+
+        <div class="peliculas-grid">
+
+          <article class="pelicula-card">
+            <img
+              src="https://picsum.photos/seed/br2049/400/540"
+              alt="Póster ilustrativo de Blade Runner 2049, película de ciencia ficción de 2017"
+              class="pelicula-img"
+            />
+            <div class="pelicula-info">
+              <span class="pelicula-anio">2017</span>
+              <h3>Blade Runner 2049</h3>
+              <p>
+                Una obra maestra visual sobre identidad y humanidad. La
+                fotografía de Roger Deakins es pura poesía cinematográfica.
+              </p>
+            </div>
+          </article>
+
+          <article class="pelicula-card">
+            <img
+              src="https://picsum.photos/seed/inception10/400/540"
+              alt="Póster ilustrativo de Inception, película de Christopher Nolan de 2010"
+              class="pelicula-img"
+            />
+            <div class="pelicula-info">
+              <span class="pelicula-anio">2010</span>
+              <h3>Inception</h3>
+              <p>
+                Nolan lleva la narrativa al límite. Una historia de capas que
+                te obliga a pensar mucho más allá del final.
+              </p>
+            </div>
+          </article>
+
+          <article class="pelicula-card">
+            <img
+              src="https://picsum.photos/seed/interstellar14/400/540"
+              alt="Póster ilustrativo de Interstellar, película de ciencia ficción de 2014"
+              class="pelicula-img"
+            />
+            <div class="pelicula-info">
+              <span class="pelicula-anio">2014</span>
+              <h3>Interstellar</h3>
+              <p>
+                Ciencia y emoción en perfecta tensión. Una de las películas
+                más impactantes que vi en el cine.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contacto" class="seccion">
+      <div class="container contacto-grid">
+
+        <div class="contacto-texto">
+          <h2 class="titulo-seccion">¿Hablamos?</h2>
+          <p>
+            Estoy disponible para colaboraciones, consultas o simplemente para
+            intercambiar ideas sobre tecnología y diseño. ¡Escribime!
+          </p>
+          <ul class="contacto-datos">
+            <li>📍 Buenos Aires, Argentina</li>
+            <li>✉️ alex@ejemplo.com</li>
+          </ul>
+        </div>
+
+        <form class="formulario-contacto" action="#" method="post">
+          <div class="form-fila">
+            <div class="form-grupo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-grupo">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+            </div>
+          </div>
+          <div class="form-grupo">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-grupo">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+54 11 0000-0000" />
+          </div>
+          <button type="submit" class="btn-primario">Enviar mensaje</button>
+        </form>
+
+      </div>
+    </section>
+
+    </main>
+
   </body>
 </html>
