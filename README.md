@@ -1,3 +1,5 @@
+
+
 Checklist - Práctica Formativa Obligatoria 1
 • Estructura del Proyecto:
 [ ] Archivo "index.html" ubicado en la raíz.
