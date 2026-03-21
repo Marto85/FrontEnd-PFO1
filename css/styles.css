@@ -1,0 +1,235 @@
+/* VARIABLES GLOBALES */
+
+:root {
+  --color-fondo: #2c2b2b;
+  --color-superficie: #1a1a24;
+  --color-borde: #2a2a38;
+  --color-acento: #7c6dfa;
+  --color-acento-claro: #a99dff;
+  --color-texto: #e8e6f0;
+  --color-texto-suave: #b0a9c0;
+  --color-blanco: #ffffff;
+  --fuente-titulo: 'Playfair Display', Georgia, serif;
+  --fuente-cuerpo: 'Plus Jakarta Sans', sans-serif;
+  --radio-borde: 12px;
+  --radio-borde-grande: 24px;
+  --sombra-tarjeta: 0 8px 40px rgba(0, 0, 0, 0.4);
+  --transicion: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* BASE */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-cuerpo);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--color-acento-claro);
+  text-decoration: none;
+  transition: color var(--transicion);
+}
+
+a:hover {
+  color: var(--color-blanco);
+}
+
+/* COMPONENTES */
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.seccion {
+  padding: 6rem 0;
+}
+
+.seccion-oscura {
+  background-color: var(--color-fondo-alt);
+}
+
+.etiqueta {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-acento-claro);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+}
+
+.titulo-seccion {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  color: var(--color-blanco);
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo-seccion {
+  color: var(--color-texto-suave);
+  margin-bottom: 3rem;
+  font-size: 1.05rem;
+}
+
+/* BOTONES */
+
+.btn-primario {
+  display: inline-block;
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transicion), transform var(--transicion), box-shadow var(--transicion);
+}
+
+.btn-primario:hover {
+  background-color: var(--color-acento-claro);
+  color: var(--color-fondo);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(124, 109, 250, 0.45);
+}
+
+/* HEADER Y NAV*/
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(13, 13, 15, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.1rem 0;
+}
+
+/* Logo */
+.logo {
+  font-family: var(--fuente-titulo);
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--color-blanco);
+  letter-spacing: -0.02em;
+}
+
+.logo span {
+  color: var(--color-acento);
+}
+
+/* Menú de navegación */
+.main-nav ul {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.main-nav a {
+  color: var(--color-texto-suave);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 0.85rem;
+  border-radius: 6px;
+  transition: color var(--transicion), background-color var(--transicion);
+}
+
+.main-nav a:hover {
+  color: var(--color-blanco);
+  background-color: var(--color-superficie);
+}
+
+.btn-nav {
+  background-color: var(--color-acento) !important;
+  color: var(--color-blanco) !important;
+  padding: 0.5rem 1.2rem !important;
+  border-radius: 50px !important;
+}
+
+.btn-nav:hover {
+  background-color: var(--color-acento-claro) !important;
+  color: var(--color-fondo) !important;
+}
+
+/* SOBRE MI */
+
+#sobre-mi {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.sobre-mi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+#sobre-mi h1 {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--color-blanco);
+  margin-bottom: 1.25rem;
+}
+
+.descripcion {
+  color: var(--color-texto-suave);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+/* Avatar / imagen de perfil */
+.avatar {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radio-borde-grande);
+  border: 3px solid var(--color-borde);
+  box-shadow: var(--sombra-tarjeta);
+  margin-left: auto;
+}
+
+
