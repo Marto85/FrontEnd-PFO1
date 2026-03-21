@@ -135,11 +135,11 @@ a:hover {
 
 .logo-container {
   display: flex;
-  align-items: center; /* Alinea verticalmente el logo */
+  align-items: center;
 }
 
 .main-logo {
-  max-width: 180px; 
+  max-width: 400px; 
   height: auto;
   display: block;
 }
@@ -176,7 +176,7 @@ a:hover {
 
 .main-nav a {
   color: var(--color-texto-suave);
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 500;
   padding: 0.5rem 0.85rem;
   border-radius: 6px;
@@ -257,7 +257,6 @@ a:hover {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* TRANSICIÓN: efecto hover en las tarjetas */
   transition: transform var(--transicion), box-shadow var(--transicion), border-color var(--transicion);
 }
 
@@ -426,8 +425,9 @@ a:hover {
 
 .pelicula-img {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover; 
   transition: transform 0.5s ease;
 }
 
