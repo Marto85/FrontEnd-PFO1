@@ -7,7 +7,7 @@ He realizado aqui la primer practica formativa obligatoria de la materia "Desarr
 
 Checklist - Práctica Formativa Obligatoria 1
 • Estructura del Proyecto:
-[ ] Archivo "index.html" ubicado en la raíz.
+:white_check_mark: Archivo "index.html" ubicado en la raíz.
 [ ] Carpeta "css" que contenga el archivo "styles.css".
 [ ] (Opcional) Carpeta "img" para recursos gráfi cos.
 [ ] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.
