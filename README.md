@@ -1,4 +1,9 @@
+# 🗂️ Portafolio Personal — PFO1
 
+## Descripcion del Proyecto
+He realizado aqui la primer practica formativa obligatoria de la materia "Desarrollo de Sistemas Web (Front End)" de la Tecnicatura en Desarrollo de Software del IFTS 29.
+
+🌐 **URL publicada (GitHub Pages):** [https://marto85.github.io/FrontEnd-PFO1/] 
 
 Checklist - Práctica Formativa Obligatoria 1
 • Estructura del Proyecto:
